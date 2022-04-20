@@ -4,49 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/Stile_cabecera.css">
-    <link rel="stylesheet" href="Css/Stile_presentacion.css">
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="stylesheet" href="Css/cabecera.css">
+    <link rel="stylesheet" href="Css/presentacion.css">
     <enlace rel="preconectar" href="https://fonts.googleapis.com">
     <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
     <enlace href="https: //fonts.googleapis.com/css2? family= Ubuntu:wght@300 & display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Css/normalize.css">
-    <title>Carlogano Socola | Desarrollador</title>
+    <title>carlomagno Socola | Desarrollador</title>
 </head>
 <body>
-    <header class="header"> 
-        <section class="container">
-            <a href="" class="logo">Mi pagina personal</a>
+
+    <header class="header">
+        <section class="cabecera">
             <nav class="navegacion">
-                <ul class="header__list">
-                <li><a href="#presentacion">Inicio</a></li>
-                <li><a href="#informacion">Información</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#contacto">Contáctame</a></li>
-                <li><a href="Login.html">Sesión</a></li>
-                </ul> 
+                <ul>
+                    <li><a href="#presentacion" class="a-link">Inicio</a></li>
+                    <li><a href="#informacion" class="a-link">Información</a></li>
+                    <li><a href="#portafolio" class="a-link">Proyectos</a></li>
+                    <li><a href="#skills" class="a-link">Skills</a></li>
+                    <li><a href="#contacto" class="a-link">Contáctame</a></li>
+                    <li><a href="Login.html" class="a-link">Sesión</a></li>
+                </ul>
             </nav>
         </section>
     </header>
-
+    
     <section class="presentacion" id="presentacion">
-        <article class="presentacion-article">
-            <h3 class="presentacion-article__text">
-                Hola, soy
-            </h3>
-            <h2 class="presentacion-article__text">CARLO MAGNO</h2>
-            <H4 class="presentacion-article__text">Socola Lozada</H4>
-            <h3 class="presentacion-article__text">Soy Programador web</h3>
-            
-        </article> 
-
-        <article class="imagen-banner">
-            <img src="img/imagen banner.png" alt="Desarrollador de software">
-        </article>
-
-        
+        <div class="card">
+            <div class="panel-1"></div>
+            <div class="panel-2"></div>
+            <div class="presentacion-article">
+            <div class="informacion">
+                <div class="info">
+                    <h3 class="saludo">
+                        Hola, mi nombre es
+                    </h3>
+                    <h2 class="user-nombre">Carlo Socola.</h2>
+                    <h3 class="user-profesion">Y soy Programador web.</h3>
+                    <p class="descrip">
+                       Soy programador web y me dedico especialmente a Front-end, tambien
+                       manejo back-end como PHP y DB.<br><br>
+                       Si quieres saber mucho mas:
+                    </p>
+                </div>
+            </div>
+            <div class="usuario">
+                <img src="img/carlos.jpeg" alt="carlo Magno Socola" >
+            </div>
+            </div>
+        </div>
     </section>
 
-    <section class="presentacion-redes" >
+    <section class="redes" >
         <a href="https://facebook.com" target="_blank" ><img src="img/facebook.png" alt="" width="30" class="presentacion-redes__img"></a>
         <a href="https://linkedin.com" target="_blank" ><img src="img/linkedin.png" alt="" width="30" class="presentacion-redes__img"></a>
         <a href="https://github.com" target="_blank" ><img src="img/github.png" alt="" width="30" class="presentacion-redes__img"></a>
@@ -112,7 +121,7 @@
          </article>
     </section>
 
-    <section class="lenguajes" id="lenguajes">
+    <section class="lenguajes" id="skills">
         <h2> Mis Conocimientos:</h2>
         <article>
             <h3>Back-End</h3>
@@ -181,6 +190,8 @@
             copyrite - todos los derechos reservados --> 2022
         </h4>
     </footer>
+
+
     
 </body>
 </html>
