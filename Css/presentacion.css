@@ -102,15 +102,13 @@
 
 @media screen and (max-width:500px){
     .presentacion{
-        padding-top: 20px;
-        min-height: 65vh ;
+        padding-top: 40px;
+        min-height: 540px ;
     }
 
     .card{
         width: 400px;
         height: 450px;
-        min-height: 400px;
-        max-width: 500px;
         position: relative;
     }
 
