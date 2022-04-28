@@ -102,13 +102,16 @@
 
 @media screen and (max-width:500px){
     .presentacion{
-        padding-top: 40px;
+        padding-top: 20px;
         min-height: 65vh ;
     }
 
     .card{
-        width: 80vw;
-        height: 55vh;
+        width: 400px;
+        height: 450px;
+        min-height: 400px;
+        max-width: 500px;
+        position: relative;
     }
 
     .panel-1{
@@ -134,7 +137,6 @@
     .panel-2{
         display: none;
     }
-
 
     .presentacion-article{
         grid-template-columns: 1fr;
@@ -165,10 +167,11 @@
 
     .info{
         width: 100%;
+        padding: 10px;
     }
 
     .usuario img{
-        margin: 20px auto;
+        margin: 0 auto;
         width: 60%;
     }
 
