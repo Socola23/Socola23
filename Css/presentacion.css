@@ -103,12 +103,12 @@
 @media (max-width:500px){
     .presentacion{
         padding-top: 40px;
-        min-height: 60vh ;
+        min-height: 65vh ;
     }
 
     .card{
         width: 80vw;
-        height: 50vh;
+        height: 55vh;
     }
 
     .panel-1{
@@ -198,4 +198,7 @@
     .descrip{
         display: none;
     }
+    
 }
+
+
