@@ -100,7 +100,7 @@
 
 /*<-------DISEÑO RESPONSIVE (500PX)-------->*/
 
-@media (max-width:500px){
+@media screen and (max-width:500px){
     .presentacion{
         padding-top: 40px;
         min-height: 65vh ;
@@ -168,14 +168,13 @@
     }
 
     .usuario img{
-        margin: 10px auto;
+        margin: 0 auto;
         width: 60%;
     }
 
-
     .saludo{
         font-size: 1.5em;
-        margin-top: 1.5em;
+        margin-top: 1em;
         color: #F59549;
         text-align: center;
     }
