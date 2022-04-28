@@ -103,12 +103,12 @@
 @media (max-width:500px){
     .presentacion{
         padding-top: 40px;
-        min-height: 80vh ;
+        min-height: 60vh ;
     }
 
     .card{
         width: 80vw;
-        height: 70vh;
+        height: 50vh;
     }
 
     .panel-1{
@@ -168,7 +168,7 @@
     }
 
     .usuario img{
-        margin: 20px auto;
+        margin: 10px auto;
         width: 60%;
     }
 
@@ -197,5 +197,5 @@
     
     .descrip{
         display: none;
-    } 
+    }
 }
