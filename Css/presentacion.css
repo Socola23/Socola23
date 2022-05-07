@@ -1,7 +1,6 @@
-
 .presentacion{
-    padding-top: 40px;
-    min-height: 90vh ;
+    min-height: 100vh ;
+    background-image: url(fondo-banner2.png) ;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #171A21;
@@ -10,42 +9,51 @@
     align-items: center;
 }
 
-.redes{
-    background-color: #878EA4;
-    min-height: 10vh ;
-}
-
 .card{
-    width: 90vw;
-    height: 70vh;
+    width: 75vw;
+    height: 80vh;
     min-height: 20em;
-    max-width: 1050px;
+    max-width: 1070px;
     position: relative;
 }
 
-.panel-1, .panel-2{
+.panel-1{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.panel-1{
-    left: 0;
-    width: 85%;
-    height: 82%;
-    z-index: 1;
-    box-shadow: 0px 5px 0px 0 rgba(255, 123, 0, 0.932);
-    backdrop-filter: blur(4px);
-    border-radius: 0 0 3em 0;  
+.panel-2 {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .panel-2{
-    right: 0;
-    width: 30%;
-    height: 80%;
-    border-radius:3em;
-    border-top: 5em;
-    background-color: #878EA4 ;
+    width: 250px;
+    height: 40px;
+    z-index: 3;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(31,38,135,0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.panel-1{
+    left: 0;
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(31,38,135,0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .presentacion-article{
@@ -53,49 +61,81 @@
     display: flex;
     z-index: 2;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     height: 100%;
     letter-spacing: 2px;
 }
 
 .usuario{
     display: flex;
-    justify-content: right;
+    justify-content: left;
     align-items: center;
 }
 
 .presentacion-article img{
-    width: 60%;
     border-radius: 50%;
+    width: 300px;
     filter: drop-shadow(0 0 1em rgba(0,0,0,0.7));
 }
 
 .informacion{
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+}
+
+.info{
+    padding: 50px;
 }
 
 .saludo{
+    margin-top: 10px;
     font-size: 1em;
-    margin-top: 2.5em;
-    color: #F59549
+    color: #16465B
 }
 
 .user-nombre{
+    margin-top: 10px;
     font-size: 3.5em;
-    color: #CCD6F6;
+    color: #000C15;
 }
 
 .user-profesion{
+    margin-top: 10px;
     font-size: 2em;
-    color: #878EA4;
+    color: #000C15;
 }
 
 .descrip{
+    margin-top: 10px;
     font-size: 1.2em;
-    margin: 1.5em 0;
-    color: #8892B0;
+    color: #000C15;
     text-align: left;
+}
+
+.saber-mas{
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.boton{
+    display: inline-flex;
+    padding: 10px 20px;
+    color: #16465B;
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(31,38,135,0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.redes_img{
+    display: block;
+    border-bottom: none;
+    width: 30px;
 }
 
 /*<-------DISEÑO RESPONSIVE (500PX)-------->*/
@@ -131,11 +171,27 @@
         backdrop-filter: blur(5px);
         box-shadow: 0 0.5px 4px #878EA4;
     }
+
+    .panel-2 {
+        position: absolute;
+        bottom: -7%;
+        transform: translateX(60%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
     
     .panel-2{
-        display: none;
+        width: 150px;
+        height: 40px;
+        z-index: 3;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 8px 32px rgba(31,38,135,0.37);
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
-
+    
     .presentacion-article{
         grid-template-columns: 1fr;
     }
@@ -176,7 +232,7 @@
     .saludo{
         font-size: 1.5em;
         margin-top: 15px;
-        color: #F59549;
+        color: #16465B;
         text-align: center;
     }
     
@@ -184,21 +240,24 @@
         text-transform: uppercase;
         margin-top: 15px;
         font-size: 2.3em;
-        color: #CCD6F6;
+        color: #242838;
         text-align: center;
     }
     
     .user-profesion{
-        margin-top: 0.5em;
+        margin-top: 0.3em;
         font-size: 2em;
-        color: #878EA4;
+        color: #323749;
         text-align: center;
     }
     
-    .descrip{
+    .descrip, .saber-mas, .boton{
         display: none;
     }
-    
+
+    .redes_img{
+        display: block;
+        border-bottom: none;
+        width: 25px;
+    }
 }
-
-
