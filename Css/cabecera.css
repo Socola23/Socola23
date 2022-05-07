@@ -9,9 +9,8 @@
 .cabecera{
     width: 100%;
     height: 40px;
-    background-color: #171A21;
     display:flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     position: fixed;
     letter-spacing: 2px;
@@ -19,6 +18,9 @@
     box-shadow: 0 0.5px 4px #878EA4;
     top: 0;
     left: 0;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(31,38,135,0.37);
+    backdrop-filter: blur(6px);
 }
 
 /* lista (ul) */
@@ -31,15 +33,16 @@
 .navegacion li{
     display: inline-block;
     line-height: 60px;
-    padding: 12px;
+    padding: 0px;
 }
 
 /* elementos - lista (a) */
 li a{
     text-decoration: none;
-    color: #F59549;
+    color: #040F14;
     position: relative;
     padding: 0 8px;
+    margin: 0 10px;
     text-transform: uppercase;
     font-size: 12px;
 }
@@ -48,7 +51,7 @@ li a{
 .navegacion a::after{
     content: '';
     position: absolute;
-    background-color: #F59549;
+    background-color: #FFFFFF;
     height: 3px;
     border-radius: 15px;
     width: 0;
@@ -63,7 +66,7 @@ li a{
 }
 
 .navegacion a:hover{
-    color: #F8B884;
+    color: #FFFFFF;
 }
 
 .open-menu, .close-menu{
@@ -72,17 +75,25 @@ li a{
 
 /* <-----DISEÑO RESPONSIVE a partir de 750 px-----> */
 
-@media (max-width: 750px){
-    
+@media (max-width: 500px){
+
+    .cabecera{
+        justify-content: right;
+        box-shadow: 0 8px 32px rgba(31,38,135,0.37);
+        backdrop-filter: none;
+
+    }
+
     .menu{
         flex-direction: column;
+        display: flex;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         align-items: center;
-        background-color: #184177;
+        background-color: #16465B;
         overflow-y: auto;
         opacity: 0;
         pointer-events: none;
@@ -97,7 +108,7 @@ li a{
     
     li a{
         text-decoration: none;
-        color: #F59549;
+        color: #ffffff;
         padding: 0 4px;
         text-transform: uppercase;
         font-size: 14px;
