@@ -1,0 +1,80 @@
+/* lo general del body (header)*/
+
+/*seccion principal "cabecera"*/
+.cabecera {
+  min-width: 50%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  letter-spacing: 2px;
+  z-index: 99;
+  top: 2%;
+  right: 0;
+  border-radius: 20px 0px 0px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 8px 32px rgba(22, 22, 26, 0.37);
+  backdrop-filter: blur(20px);
+  border: solid 1px transparent;
+  background-clip: padding-box;
+  animation-name: cabecera;
+  animation-duration: 1.5s;
+  overflow: hidden;
+}
+
+@keyframes cabecera {
+  0% {
+    transform: translateX(100%);
+  }
+}
+
+/* lista (ul) */
+.navegacion ul {
+  list-style: none;
+  display: flex;
+}
+
+/* elementos - lista (li) */
+.navegacion li {
+  display: inline-block;
+  line-height: 60px;
+  padding: 0px;
+}
+
+/* elementos - lista (a) */
+li a {
+  text-decoration: none;
+  color: #0c2935;
+  position: relative;
+  padding: 0 8px;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+/* diseño de los elementos a */
+.navegacion a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  border-radius: 15px;
+  width: 0;
+  left: 0;
+  bottom: -9px;
+  transition: 0.5s;
+}
+
+.navegacion a:hover:after {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.navegacion a:hover {
+    transition: .5s;
+  color: #ffffff;
+}
+
+.open-menu,
+.close-menu {
+  display: none;
+}

@@ -1,0 +1,36 @@
+.footerclass{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer{
+    width: 100vw;
+    height: 15vh;
+    position: relative;
+}
+
+.panel-footer{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.panel-footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 15vh;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 8px 32px rgba(22, 22, 26, 0.37);
+    backdrop-filter: blur(20px) ;
+    border: solid 1px transparent;
+    background-clip: padding-box;
+}
+
+.footer-info{
+    position: relative;
+    z-index: 2;
+}
