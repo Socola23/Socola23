@@ -9,7 +9,7 @@
   width: 70vw;
   height: 80vh;
   min-height: 20em;
-  position: relative; 
+  position: relative;
 }
 
 .panel-1 {
@@ -30,7 +30,6 @@
   border: solid 1px transparent;
   background-clip: padding-box;
 }
-
 
 .presentacion-article {
   position: relative;
@@ -119,43 +118,40 @@
   animation-duration: 1.5s;
 }
 
-@keyframes panel{
-  from{
+@keyframes panel {
+  from {
     transform: translateX(-100%);
   }
-  to{
+  to {
     transform: translateX(0%);
   }
 }
 
-
-.panel-2 ul{
+.panel-2 ul {
   list-style: none;
   display: flex;
 }
 
-.panel-2 li{
+.panel-2 li {
   padding: 0 16px;
 }
 
-.panel-2 ul li a{
-  transition: .2s;
-  
- }
+.panel-2 ul li a {
+  transition: 0.2s;
+}
 
- .redes_img {
+.redes_img {
   width: 30px;
   display: flex;
 }
 
-.panel-2 ul:hover a{
+.panel-2 ul:hover a {
   filter: blur(3px);
 }
 
-.panel-2 ul li a:hover{
+.panel-2 ul li a:hover {
   transform: translateY(-3px) scale(1.06);
   filter: none;
- 
 }
 
 .correo {
@@ -183,11 +179,11 @@
   animation-duration: 1.5s;
 }
 
-@keyframes correopanel{
-  from{
+@keyframes correopanel {
+  from {
     transform: translateX(100%);
   }
-  to{
+  to {
     transform: translateX(0%);
   }
 }
@@ -218,39 +214,32 @@
   background-color: #fff8c2;
 }
 
-
-
 /*<-------DISEÑO RESPONSIVE (500PX)-------->*/
 
 @media screen and (max-width: 500px) {
-  
-  .card{
+  .card {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
- .panel-2{
-   animation: none;
- }
+  .panel-2 {
+    animation: none;
+  }
 
- .panel-1{
-   animation: none;
- }
+  .panel-1 {
+    animation: none;
+  }
 
- .correo{
-   animation: none;
-   display: none;
- }
+  .correo {
+    animation: none;
+    display: none;
+  }
 
- .panel-2 {
-  width: 250px;
-  display: flex;
-  top: auto;
-  bottom: 0;
-  left: auto;
-}
-
-
- 
+  .panel-2 {
+    width: 250px;
+    display: flex;
+    top: 91%;
+    left: auto;
+  }
 }
