@@ -239,7 +239,8 @@
   .panel-2 {
     width: 250px;
     display: flex;
-    top: 91%;
-    left: auto;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
