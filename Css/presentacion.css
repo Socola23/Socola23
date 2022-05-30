@@ -234,7 +234,7 @@
   .panel-2 {
     width: 250px;
     display: flex;
-    bottom: 0%;
+    top: 91%;
     left: 50%;
     transform: translateX(-50%);
   }
