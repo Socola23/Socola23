@@ -216,12 +216,7 @@
 
 /*<-------DISEÑO RESPONSIVE (500PX)-------->*/
 
-@media screen and (max-width: 500px) {
-  .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+@media (max-width: 500px) {
 
   .panel-2 {
     animation: none;
