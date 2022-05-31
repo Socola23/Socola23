@@ -1,0 +1,262 @@
+.presentacion {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100vw;
+  height: 90vh;
+  min-height: 20em;
+  position: relative;
+}
+
+.presentacion-article {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  width: 50%;
+  height: 100%;
+  margin-left: 8%;
+  letter-spacing: 2px;
+}
+
+.informacion {
+  text-align: left;
+}
+
+.saludo {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: #16465b;
+}
+
+.user-nombre {
+  margin-top: 10px;
+  font-size: 3.5em;
+  color: #FCEBFA;
+}
+
+.user-profesion {
+  margin-top: 10px;
+  font-size: 2em;
+  color: #FCEBFA;
+}
+
+.descrip {
+  margin-top: 10px;
+  font-size: 1.4em;
+  color: #FCEBFA;
+}
+
+.saber-mas {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #FCEBFA;
+}
+
+.boton {
+  display: inline-flex;
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 20px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 10px 8px 32px rgba(22, 22, 26, 0.37);
+  backdrop-filter: blur(20px);
+  border: solid 1px transparent;
+  background-clip: padding-box;
+  border: none;
+  color: #FCEBFA;
+}
+
+.panel-2 {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0%;
+}
+
+.panel-2 {
+  width: 45px;
+  height: 100%;
+  z-index: 99;
+  border-radius: 0px 20px 20px 0;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 10px 8px 32px rgba(22, 22, 26, 0.37);
+  backdrop-filter: blur(20px);
+  border: solid 1px transparent;
+  background-clip: padding-box;
+  animation-name: panel;
+  animation-duration: 1.5s;
+}
+
+.imagen-inicio{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: -4%;
+}
+
+.imagen-inicio{
+  width: 65%;
+  height: 100%;
+}
+
+.imagen-inicio video{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.panel-2 ul {
+  list-style: none;
+}
+
+.panel-2 li {
+  padding: 16px 0px;
+}
+
+.panel-2 ul li a {
+  transition: 0.2s;
+}
+
+.redes_img {
+  width: 25px;
+  display: flex;
+}
+
+.panel-2 ul:hover a {
+  filter: blur(3px);
+}
+
+.panel-2 ul li a:hover {
+  transform: translateY(-3px) scale(1.06);
+  filter: none;
+}
+
+
+/*<-------DISEÑO RESPONSIVE (500PX)-------->*/
+
+@media (max-width: 500px) {
+
+  .card {
+    width: 80vw;
+  }
+
+  .panel-1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .panel-1 {
+    left: 0;
+    width: 100%;
+    height: 80%;
+    z-index: 2;
+    border-radius: 20px 20px 20px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 10px 8px 32px rgba(22, 22, 26, 0.37);
+    backdrop-filter: blur(5px) ;
+    border: solid 1px transparent;
+    background-clip: padding-box;
+  }
+
+  .presentacion-article {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    padding: 5%;
+    letter-spacing: 2px;
+  }
+
+  .informacion {
+    text-align: center;
+  }
+
+  .imagen-inicio{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0%;
+  }
+  
+  .imagen-inicio{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imagen-inicio video{
+    width: 300%;
+  }
+
+  .panel-2 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: auto;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .panel-2 {
+    width: 270px;
+    height: 50px;
+    z-index: 990;
+    border-radius: 20px 20px 20px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 10px 8px 32px rgba(22, 22, 26, 0.37);
+    backdrop-filter: blur(20px);
+    border: solid 1px transparent;
+    background-clip: padding-box;
+    animation-name: panel;
+    animation-duration: 1.5s;
+  }
+
+  
+.panel-2 ul {
+  list-style: none;
+  display: flex;
+}
+
+.panel-2 li {
+  padding: 0 16px;
+}
+
+.panel-2 ul li a {
+  transition: 0.2s;
+}
+
+.redes_img {
+  width: 30px;
+  display: flex;
+}
+
+.panel-2 ul:hover a {
+  filter: blur(3px);
+}
+
+.panel-2 ul li a:hover {
+  transform: translateY(-3px) scale(1.06);
+  filter: none;
+}
+  
+}
